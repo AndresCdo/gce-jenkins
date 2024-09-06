@@ -68,6 +68,6 @@ resource "google_compute_instance_group_manager" "jenkins_servers_igm" {
 }
 
 data "google_compute_image" "jenkins_server" {
-  family  = "jenkins-agent"
-  project = var.project_id
+  family  = "ubuntu-minimal-2004-lts"
+  project = "ubuntu-os-cloud"
 }

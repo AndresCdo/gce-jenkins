@@ -21,11 +21,11 @@ variable "zone" {
 
 variable "gce_ssh_user" {
   description = "SSH User"
-  type = string
-  default = "jenkins"
+  type        = string
+  default     = "jenkins"
 }
 
 variable "gce_ssh_pub_key_file" {
   description = "SSH public key"
-  type = string
+  type        = string
 }
